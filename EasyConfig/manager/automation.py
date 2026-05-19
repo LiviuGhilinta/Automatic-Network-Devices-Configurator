@@ -26,9 +26,6 @@ def configuration_router(device_id, port,name,interface, ip_address, mask):
             
             print("SSH gata!")
             connection.disconnect()
-            if ssh_enable:
-                time.sleep(2)
-                ssh_conection(ip_address,username, password)
             interface_obj = Interface.objects.get(device_id = device_id, name = interface)
             interface_obj.is_configured =True
             interface_obj.save()
