@@ -37,7 +37,7 @@ def configuration_router(device_id, port,name,interface, ip_address, mask):
 def ssh_conection(ip_address,username, password):
     try:
         connection = ConnectHandler(
-            device_type = "cisco_ios",
+            device_type = "cisco_ios_telnet",
             host = ip_address,
             username = username,
             password = password,
@@ -58,7 +58,7 @@ def vpcs_configuration(device_id, port,name,interface,ip_address, mask, default_
     with worker:
         try:
             connection = ConnectHandler(
-                device_type = "cisco_ios_telnet",
+                device_type = "generic_telnet",
                 host = "192.168.56.101",
                 port = port,
                 global_delay_factor = 2
