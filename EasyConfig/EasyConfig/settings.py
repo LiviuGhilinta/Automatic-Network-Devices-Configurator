@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+<<<<<<< HEAD
 import os
 import environ
 
@@ -18,6 +19,12 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOGIN_REDIRECT_URL = '/dashboard/'
 environ.Env.read_env(BASE_DIR / '.env')
+=======
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+>>>>>>> origin/main
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -41,7 +48,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'manager',
+<<<<<<< HEAD
     'rest_framework',
+=======
+>>>>>>> origin/main
 ]
 
 MIDDLEWARE = [
@@ -80,11 +90,19 @@ WSGI_APPLICATION = 'EasyConfig.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+<<<<<<< HEAD
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD', 'DB_PASSW'),
         'HOST': os.getenv('DB_HOST','db'),
         'PORT': os.getenv('PORT','5432')
+=======
+        'NAME': 'EasyConfig',
+        'USER': 'postgres',
+        'PASSWORD': 'abcd1234',
+        'HOST': "127.0.0.1",
+        'PORT': '5432'
+>>>>>>> origin/main
     }
 }
 

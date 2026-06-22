@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -24,3 +25,7 @@ class Interface(models.Model):
     gateway = models.GenericIPAddressField(null=True,blank = True)
     is_configured = models.BooleanField(default= False)
     
+=======
+
+# Create your models here.
+>>>>>>> origin/main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os,threading
 from django.contrib.auth.decorators import login_required
 from rest_framework.decorators import api_view
@@ -101,3 +102,8 @@ def run_device_ping(request):
         return Response({
             'is_configured': False
         }, status=status.HTTP_404_NOT_FOUND)
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> origin/main
