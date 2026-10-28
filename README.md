@@ -35,6 +35,8 @@ Automatic-Network-Devices-Configurator/
 │   └── templates/            # Web dashboard templates
 │
 └── README.md
+```
+
 Components
 Backend: Python & Django (REST/MVC pattern)
 
